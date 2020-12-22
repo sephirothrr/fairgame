@@ -1,0 +1,422 @@
+DEBUG: "2020-12-08 15:20:45,574 - Using proactor: IocpProactor
+DEBUG: "2020-12-08 15:20:45,713 - Loading KWallet
+DEBUG: "2020-12-08 15:20:45,714 - Loading SecretService
+DEBUG: "2020-12-08 15:20:45,715 - Loading Windows
+DEBUG: "2020-12-08 15:20:45,725 - Loading chainer
+DEBUG: "2020-12-08 15:20:45,726 - Loading macOS
+INFO: "2020-12-08 15:20:45,740 - Initializing Apprise handler
+DEBUG: "2020-12-08 15:20:45,741 - No Apprise config found.
+INFO: "2020-12-08 15:20:45,741 - Initializing other notification handlers
+DEBUG: "2020-12-08 15:20:45,742 - Initializing local audio handler
+DEBUG: "2020-12-08 15:20:45,742 - Initializing twilio handler
+DEBUG: "2020-12-08 15:20:45,742 - No Twilio creds found.
+DEBUG: "2020-12-08 15:20:45,742 - Initializing discord handler
+DEBUG: "2020-12-08 15:20:45,743 - No Discord creds found.
+DEBUG: "2020-12-08 15:20:45,743 - Initializing join handler
+DEBUG: "2020-12-08 15:20:45,743 - No join config found.
+DEBUG: "2020-12-08 15:20:45,743 - Initializing telegram handler
+DEBUG: "2020-12-08 15:20:45,743 - No Telegram config found.
+DEBUG: "2020-12-08 15:20:45,743 - Initializing slack handler
+DEBUG: "2020-12-08 15:20:45,743 - No Slack creds found.
+INFO: "2020-12-08 15:20:45,743 - Enabled Handlers: ['Audio']
+INFO: "2020-12-08 15:20:45,752 - No credential file found, let's make one
+INFO: "2020-12-08 15:20:57,369 - Create a password for the credential file
+INFO: "2020-12-08 15:21:11,781 - Credentials safely stored.
+DEBUG: "2020-12-08 15:21:12,499 - POST http://127.0.0.1:52208/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"excludeSwitches": ["enable-automation", "enable-logging"], "useAutomationExtension": false, "prefs": {"profile.managed_default_content_settings.images": 0}, "extensions": [], "args": ["user-data-dir=.profile-amz"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"excludeSwitches": ["enable-automation", "enable-logging"], "useAutomationExtension": false, "prefs": {"profile.managed_default_content_settings.images": 0}, "extensions": [], "args": ["user-data-dir=.profile-amz"]}}}
+DEBUG: "2020-12-08 15:21:12,499 - Starting new HTTP connection (1): 127.0.0.1:52208
+DEBUG: "2020-12-08 15:21:15,476 - http://127.0.0.1:52208 "POST /session HTTP/1.1" 200 663
+DEBUG: "2020-12-08 15:21:15,477 - Finished Request
+DEBUG: "2020-12-08 15:21:15,477 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/"}
+DEBUG: "2020-12-08 15:21:17,371 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:17,371 - Finished Request
+INFO: "2020-12-08 15:21:17,371 - Waiting for home page.
+DEBUG: "2020-12-08 15:21:17,374 - Calling handle_startup(<stores.amazon.Amazon object at 0x00000247EF12C6D0>)
+DEBUG: "2020-12-08 15:21:17,883 - Calling is_logged_in(<stores.amazon.Amazon object at 0x00000247EF12C6D0>)
+DEBUG: "2020-12-08 15:21:17,883 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element {"using": "css selector", "value": "[id=\"nav-link-accountList\"]"}
+DEBUG: "2020-12-08 15:21:17,911 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element HTTP/1.1" 404 1067
+DEBUG: "2020-12-08 15:21:17,912 - Finished Request
+DEBUG: "2020-12-08 15:21:17,912 - 'is_logged_in' returned False
+INFO: "2020-12-08 15:21:17,912 - Lets log in.
+DEBUG: "2020-12-08 15:21:17,915 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element {"using": "xpath", "value": "//*[@id=\"ge-hello\"]/div/span/a"}
+DEBUG: "2020-12-08 15:21:17,932 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element HTTP/1.1" 200 88
+DEBUG: "2020-12-08 15:21:17,932 - Finished Request
+DEBUG: "2020-12-08 15:21:17,932 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element/18f4b4a8-fb6b-403f-bc42-705ada6568dc/click {"id": "18f4b4a8-fb6b-403f-bc42-705ada6568dc"}
+DEBUG: "2020-12-08 15:21:18,985 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element/18f4b4a8-fb6b-403f-bc42-705ada6568dc/click HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:18,985 - Finished Request
+INFO: "2020-12-08 15:21:18,985 - Wait for Sign In page
+DEBUG: "2020-12-08 15:21:19,491 - 'handle_startup' returned None
+DEBUG: "2020-12-08 15:21:19,491 - Calling is_logged_in(<stores.amazon.Amazon object at 0x00000247EF12C6D0>)
+DEBUG: "2020-12-08 15:21:19,491 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element {"using": "css selector", "value": "[id=\"nav-link-accountList\"]"}
+DEBUG: "2020-12-08 15:21:19,624 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element HTTP/1.1" 404 1067
+DEBUG: "2020-12-08 15:21:19,624 - Finished Request
+DEBUG: "2020-12-08 15:21:19,624 - 'is_logged_in' returned False
+DEBUG: "2020-12-08 15:21:19,624 - Calling login(<stores.amazon.Amazon object at 0x00000247EF12C6D0>)
+INFO: "2020-12-08 15:21:19,624 - Email
+DEBUG: "2020-12-08 15:21:19,625 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element {"using": "xpath", "value": "//*[@id=\"ap_email\"]"}
+DEBUG: "2020-12-08 15:21:19,631 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element HTTP/1.1" 200 88
+DEBUG: "2020-12-08 15:21:19,632 - Finished Request
+DEBUG: "2020-12-08 15:21:19,632 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element/c38aab66-02d7-4c59-828d-115d91d224da/value {"text": "sephirothrr@gmail.com\ue006", "value": ["s", "e", "p", "h", "i", "r", "o", "t", "h", "r", "r", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m", "\ue006"], "id": "c38aab66-02d7-4c59-828d-115d91d224da"}
+DEBUG: "2020-12-08 15:21:20,329 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element/c38aab66-02d7-4c59-828d-115d91d224da/value HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:20,393 - Finished Request
+DEBUG: "2020-12-08 15:21:20,393 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@id=\"auth-error-message-box\"]"}
+DEBUG: "2020-12-08 15:21:20,407 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:20,407 - Finished Request
+INFO: "2020-12-08 15:21:20,408 - Remember me checkbox
+DEBUG: "2020-12-08 15:21:20,410 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element {"using": "xpath", "value": "//*[@name=\"rememberMe\"]"}
+DEBUG: "2020-12-08 15:21:20,424 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element HTTP/1.1" 200 88
+DEBUG: "2020-12-08 15:21:20,425 - Finished Request
+DEBUG: "2020-12-08 15:21:20,425 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element/c90b6456-e961-4cf5-bd5e-6137b80fc79f/click {"id": "c90b6456-e961-4cf5-bd5e-6137b80fc79f"}
+DEBUG: "2020-12-08 15:21:20,486 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element/c90b6456-e961-4cf5-bd5e-6137b80fc79f/click HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:20,487 - Finished Request
+INFO: "2020-12-08 15:21:20,487 - Password
+DEBUG: "2020-12-08 15:21:20,490 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element {"using": "xpath", "value": "//*[@id=\"ap_password\"]"}
+DEBUG: "2020-12-08 15:21:20,503 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element HTTP/1.1" 200 88
+DEBUG: "2020-12-08 15:21:20,504 - Finished Request
+DEBUG: "2020-12-08 15:21:20,504 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/element/a6283731-26a1-4788-bf95-0a32d2bea8cf/value {"text": "CFFwajN4wppupDn\ue006", "value": ["C", "F", "F", "w", "a", "j", "N", "4", "w", "p", "p", "u", "p", "D", "n", "\ue006"], "id": "a6283731-26a1-4788-bf95-0a32d2bea8cf"}
+DEBUG: "2020-12-08 15:21:20,573 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/element/a6283731-26a1-4788-bf95-0a32d2bea8cf/value HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:20,574 - Finished Request
+DEBUG: "2020-12-08 15:21:21,075 - GET http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/title {}
+DEBUG: "2020-12-08 15:21:24,073 - http://127.0.0.1:52208 "GET /session/7e98c943ffb5d8762d892aa14a80fc95/title HTTP/1.1" 200 95
+DEBUG: "2020-12-08 15:21:24,074 - Finished Request
+INFO: "2020-12-08 15:21:24,074 - Logged in as sephirothrr@gmail.com
+DEBUG: "2020-12-08 15:21:24,075 - 'login' returned None
+DEBUG: "2020-12-08 15:21:24,075 - GET http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/screenshot {}
+DEBUG: "2020-12-08 15:21:24,592 - http://127.0.0.1:52208 "GET /session/7e98c943ffb5d8762d892aa14a80fc95/screenshot HTTP/1.1" 200 1464800
+DEBUG: "2020-12-08 15:21:24,595 - Finished Request
+DEBUG: "2020-12-08 15:21:24,600 - Calling run_asins(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 3.0)
+DEBUG: "2020-12-08 15:21:24,600 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:24,611 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:25,608 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:25,608 - Finished Request
+DEBUG: "2020-12-08 15:21:25,609 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:25,646 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:25,646 - Finished Request
+DEBUG: "2020-12-08 15:21:25,646 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:25,687 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:25,687 - Finished Request
+DEBUG: "2020-12-08 15:21:25,687 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:25,695 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:25,695 - Finished Request
+DEBUG: "2020-12-08 15:21:25,695 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:28,695 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:28,697 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:29,333 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:29,333 - Finished Request
+DEBUG: "2020-12-08 15:21:29,333 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:29,346 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:29,346 - Finished Request
+DEBUG: "2020-12-08 15:21:29,346 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:29,350 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:29,351 - Finished Request
+DEBUG: "2020-12-08 15:21:29,351 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:29,355 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:29,356 - Finished Request
+DEBUG: "2020-12-08 15:21:29,356 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:32,356 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:32,365 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:32,908 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:32,908 - Finished Request
+DEBUG: "2020-12-08 15:21:32,908 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:32,920 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:32,920 - Finished Request
+DEBUG: "2020-12-08 15:21:32,920 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:32,926 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:32,926 - Finished Request
+DEBUG: "2020-12-08 15:21:32,926 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:32,930 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:32,930 - Finished Request
+DEBUG: "2020-12-08 15:21:32,930 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:35,930 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:35,939 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:36,478 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:36,478 - Finished Request
+DEBUG: "2020-12-08 15:21:36,478 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:36,488 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:36,488 - Finished Request
+DEBUG: "2020-12-08 15:21:36,488 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:36,497 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:36,497 - Finished Request
+DEBUG: "2020-12-08 15:21:36,497 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:36,504 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:36,504 - Finished Request
+DEBUG: "2020-12-08 15:21:36,504 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:39,505 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:39,510 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:40,204 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:40,204 - Finished Request
+DEBUG: "2020-12-08 15:21:40,205 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:40,217 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:40,218 - Finished Request
+DEBUG: "2020-12-08 15:21:40,218 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:40,224 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:40,225 - Finished Request
+DEBUG: "2020-12-08 15:21:40,225 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:40,230 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:40,230 - Finished Request
+DEBUG: "2020-12-08 15:21:40,230 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:43,230 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:43,235 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:43,794 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:43,794 - Finished Request
+DEBUG: "2020-12-08 15:21:43,794 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:43,802 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:43,802 - Finished Request
+DEBUG: "2020-12-08 15:21:43,802 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:43,807 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:43,807 - Finished Request
+DEBUG: "2020-12-08 15:21:43,807 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:43,815 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:43,815 - Finished Request
+DEBUG: "2020-12-08 15:21:43,815 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:46,816 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:46,829 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:47,302 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:47,302 - Finished Request
+DEBUG: "2020-12-08 15:21:47,302 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:47,307 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:47,308 - Finished Request
+DEBUG: "2020-12-08 15:21:47,308 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:47,312 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:47,312 - Finished Request
+DEBUG: "2020-12-08 15:21:47,312 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:47,317 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:47,317 - Finished Request
+DEBUG: "2020-12-08 15:21:47,317 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:50,318 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:50,321 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:50,794 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:50,794 - Finished Request
+DEBUG: "2020-12-08 15:21:50,794 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:50,800 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:50,801 - Finished Request
+DEBUG: "2020-12-08 15:21:50,801 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:50,808 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:50,808 - Finished Request
+DEBUG: "2020-12-08 15:21:50,808 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:50,812 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:50,812 - Finished Request
+DEBUG: "2020-12-08 15:21:50,812 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:53,812 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:53,822 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:54,287 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:54,287 - Finished Request
+DEBUG: "2020-12-08 15:21:54,287 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:54,293 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:54,293 - Finished Request
+DEBUG: "2020-12-08 15:21:54,293 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:54,300 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:54,300 - Finished Request
+DEBUG: "2020-12-08 15:21:54,300 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:54,305 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:54,305 - Finished Request
+DEBUG: "2020-12-08 15:21:54,305 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:21:57,305 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:21:57,308 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:21:57,777 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:21:57,778 - Finished Request
+DEBUG: "2020-12-08 15:21:57,778 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:21:57,790 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:57,790 - Finished Request
+DEBUG: "2020-12-08 15:21:57,790 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:21:57,799 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:57,799 - Finished Request
+DEBUG: "2020-12-08 15:21:57,799 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:21:57,804 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:21:57,805 - Finished Request
+DEBUG: "2020-12-08 15:21:57,805 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:00,805 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:00,818 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:01,304 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:01,304 - Finished Request
+DEBUG: "2020-12-08 15:22:01,304 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:01,310 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:01,310 - Finished Request
+DEBUG: "2020-12-08 15:22:01,310 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:01,316 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:01,317 - Finished Request
+DEBUG: "2020-12-08 15:22:01,317 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:01,321 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:01,322 - Finished Request
+DEBUG: "2020-12-08 15:22:01,322 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:04,323 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:04,325 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:04,786 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:04,786 - Finished Request
+DEBUG: "2020-12-08 15:22:04,786 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:04,792 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:04,793 - Finished Request
+DEBUG: "2020-12-08 15:22:04,793 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:04,799 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:04,799 - Finished Request
+DEBUG: "2020-12-08 15:22:04,799 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:04,803 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:04,803 - Finished Request
+DEBUG: "2020-12-08 15:22:04,803 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:07,803 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:07,806 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:08,346 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:08,346 - Finished Request
+DEBUG: "2020-12-08 15:22:08,346 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:08,354 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:08,354 - Finished Request
+DEBUG: "2020-12-08 15:22:08,354 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:08,358 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:08,359 - Finished Request
+DEBUG: "2020-12-08 15:22:08,359 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:08,364 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:08,364 - Finished Request
+DEBUG: "2020-12-08 15:22:08,364 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:11,365 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:11,368 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:11,803 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:11,803 - Finished Request
+DEBUG: "2020-12-08 15:22:11,804 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:11,808 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:11,808 - Finished Request
+DEBUG: "2020-12-08 15:22:11,808 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:11,813 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:11,813 - Finished Request
+DEBUG: "2020-12-08 15:22:11,813 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:11,817 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:11,817 - Finished Request
+DEBUG: "2020-12-08 15:22:11,818 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:14,818 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:14,821 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:15,403 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:15,403 - Finished Request
+DEBUG: "2020-12-08 15:22:15,404 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:15,410 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:15,410 - Finished Request
+DEBUG: "2020-12-08 15:22:15,410 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:15,415 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:15,416 - Finished Request
+DEBUG: "2020-12-08 15:22:15,416 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:15,420 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:15,420 - Finished Request
+DEBUG: "2020-12-08 15:22:15,421 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:18,422 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:18,423 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:18,869 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:18,869 - Finished Request
+DEBUG: "2020-12-08 15:22:18,869 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:18,874 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:18,874 - Finished Request
+DEBUG: "2020-12-08 15:22:18,875 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:18,879 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:18,879 - Finished Request
+DEBUG: "2020-12-08 15:22:18,879 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:18,883 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:18,883 - Finished Request
+DEBUG: "2020-12-08 15:22:18,883 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:21,883 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:21,886 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:22,391 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:22,391 - Finished Request
+DEBUG: "2020-12-08 15:22:22,391 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:22,396 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:22,396 - Finished Request
+DEBUG: "2020-12-08 15:22:22,396 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:22,401 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:22,401 - Finished Request
+DEBUG: "2020-12-08 15:22:22,401 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:22,405 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:22,405 - Finished Request
+DEBUG: "2020-12-08 15:22:22,405 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:25,407 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:25,419 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:25,914 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:25,914 - Finished Request
+DEBUG: "2020-12-08 15:22:25,914 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:25,919 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:25,919 - Finished Request
+DEBUG: "2020-12-08 15:22:25,920 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:25,926 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:25,926 - Finished Request
+DEBUG: "2020-12-08 15:22:25,927 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:25,931 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:25,931 - Finished Request
+DEBUG: "2020-12-08 15:22:25,931 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:28,931 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:28,937 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:29,438 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:29,439 - Finished Request
+DEBUG: "2020-12-08 15:22:29,439 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:29,443 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:29,444 - Finished Request
+DEBUG: "2020-12-08 15:22:29,444 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:29,449 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:29,450 - Finished Request
+DEBUG: "2020-12-08 15:22:29,450 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:29,455 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:29,456 - Finished Request
+DEBUG: "2020-12-08 15:22:29,456 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:32,456 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:32,462 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:32,958 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:32,958 - Finished Request
+DEBUG: "2020-12-08 15:22:32,958 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:32,963 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:32,964 - Finished Request
+DEBUG: "2020-12-08 15:22:32,964 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:32,969 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:32,969 - Finished Request
+DEBUG: "2020-12-08 15:22:32,969 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:32,977 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:32,978 - Finished Request
+DEBUG: "2020-12-08 15:22:32,978 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:35,978 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:35,981 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:36,527 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:36,527 - Finished Request
+DEBUG: "2020-12-08 15:22:36,527 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:36,534 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:36,535 - Finished Request
+DEBUG: "2020-12-08 15:22:36,535 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:36,539 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:36,539 - Finished Request
+DEBUG: "2020-12-08 15:22:36,539 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:36,543 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:36,544 - Finished Request
+DEBUG: "2020-12-08 15:22:36,544 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:39,545 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:39,552 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:40,101 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:40,101 - Finished Request
+DEBUG: "2020-12-08 15:22:40,101 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:40,116 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:40,116 - Finished Request
+DEBUG: "2020-12-08 15:22:40,116 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:40,122 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:40,122 - Finished Request
+DEBUG: "2020-12-08 15:22:40,122 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:40,127 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:40,127 - Finished Request
+DEBUG: "2020-12-08 15:22:40,127 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:43,127 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:43,130 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:43,642 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:43,643 - Finished Request
+DEBUG: "2020-12-08 15:22:43,643 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:43,658 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:43,658 - Finished Request
+DEBUG: "2020-12-08 15:22:43,659 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:43,665 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:43,665 - Finished Request
+DEBUG: "2020-12-08 15:22:43,665 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:43,673 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:43,673 - Finished Request
+DEBUG: "2020-12-08 15:22:43,673 - 'check_stock' returned False
+DEBUG: "2020-12-08 15:22:46,674 - Calling check_stock(<stores.amazon.Amazon object at 0x00000247EF12C6D0>, 'B08164VTWH', 345.0, 355.0)
+DEBUG: "2020-12-08 15:22:46,678 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/url {"url": "https://smile.amazon.com/gp/offer-listing/B08164VTWH/ref=olp_f_new&f_new=true&f_freeShipping=on"}
+DEBUG: "2020-12-08 15:22:47,372 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/url HTTP/1.1" 200 14
+DEBUG: "2020-12-08 15:22:47,372 - Finished Request
+DEBUG: "2020-12-08 15:22:47,372 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@name=\"submit.addToCart\"]"}
+DEBUG: "2020-12-08 15:22:47,385 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:47,385 - Finished Request
+DEBUG: "2020-12-08 15:22:47,385 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-size-large a-color-price olpOfferPrice a-text-bold\"]"}
+DEBUG: "2020-12-08 15:22:47,390 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:47,390 - Finished Request
+DEBUG: "2020-12-08 15:22:47,390 - POST http://127.0.0.1:52208/session/7e98c943ffb5d8762d892aa14a80fc95/elements {"using": "xpath", "value": "//*[@class=\"a-color-secondary\"]"}
+DEBUG: "2020-12-08 15:22:47,395 - http://127.0.0.1:52208 "POST /session/7e98c943ffb5d8762d892aa14a80fc95/elements HTTP/1.1" 200 12
+DEBUG: "2020-12-08 15:22:47,395 - Finished Request
+DEBUG: "2020-12-08 15:22:47,395 - 'check_stock' returned False

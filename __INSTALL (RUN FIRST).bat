@@ -1,7 +1,7 @@
 @echo on
-pip install pipenv
+python -m pip install pipenv
 pause
-pipenv install
+python -m pipenv install
 
 
 
